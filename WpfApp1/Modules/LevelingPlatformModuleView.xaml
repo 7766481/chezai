@@ -1,0 +1,13 @@
+﻿<Modules:BaseModuleView x:Class="WpfApp1.Modules.LevelingPlatformModuleView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.Modules"
+              mc:Ignorable="d" d:DesignHeight="540" d:DesignWidth="960"
+             xmlns:Modules="clr-namespace:WpfApp1.Modules" Background="#FF1E1E1E">
+    <Grid x:Name="GdRoot">
+        <TextBlock Text="开发中...调平平台" Foreground="White"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button x:Name="button" Content="返回"  Margin="0"   VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="button_Click"/>
+    </Grid>
+</Modules:BaseModuleView>

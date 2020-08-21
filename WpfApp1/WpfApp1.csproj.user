@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Modules\AnimImage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\CarInModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\CarouselModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\CarOutModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\CheckAndFightModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\ElectromagneticAttractionModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\HomeModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\JammingGunModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\LevelingPlatformModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\LiftingPlatformModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\LoadModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\LodgingMechanismModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\PhotoelectricityModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\RadarModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\SkylightModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modules\SupportingLegsModuleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\AnimImage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\CarInModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\CarouselModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\CarOutModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\CheckAndFightModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\ElectromagneticAttractionModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\HomeModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\JammingGunModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\LevelingPlatformModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\LiftingPlatformModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\LoadModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\LodgingMechanismModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\PhotoelectricityModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\RadarModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\SkylightModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modules\SupportingLegsModuleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

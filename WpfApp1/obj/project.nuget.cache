@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8QQc3vnhXgv9rpqVmv02I6cHam2UPoJI6n79OeYq+0F30LqHacCV3M8cokiR5PruRwUU8B0ZAiXbZ3myo3uSbw==",
+  "success": true,
+  "projectFilePath": "D:\\project\\chezai\\code\\WpfApp1\\WpfApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zhang\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\zhang\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\zhang\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

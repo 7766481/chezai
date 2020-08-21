@@ -1,0 +1,14 @@
+﻿<Modules:BaseModuleView x:Class="WpfApp1.Modules.CarouselModuleView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d"
+             xmlns:Modules="clr-namespace:WpfApp1.Modules" >
+    <Grid x:Name="GdRoot" Background="#02000000" >
+        <Canvas x:Name="CvMain">
+        </Canvas>
+
+    </Grid>
+</Modules:BaseModuleView>

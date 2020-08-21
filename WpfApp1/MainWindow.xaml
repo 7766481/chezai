@@ -1,0 +1,103 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Modules"
+        mc:Ignorable="d" 
+        Title="MainWindow"  WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized" Margin="0" Loaded="Window_Loaded" Background="{x:Null}" Closing="Window_Closing">
+    <Grid   >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid VerticalAlignment="Top"  x:Name="GdHeader">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"  Grid.Column="0">
+                <Label x:Name="label1" Content="环境信息：" Foreground="#FF01AEFF" FontWeight="Bold" FontFamily="Microsoft YaHei" FontSize="20" VerticalAlignment="Center"  />
+                <Label x:Name="label2" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label3" Content="温度：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <Label x:Name="label4" Content="23℃" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label5" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label6" Content="转速：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <Label x:Name="label7" Content="23℃" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label8" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label9" Content="湿度：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label10" Content="23℃" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label11" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label12" Content="油量：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label13" Content="23ml" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label14" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label15" Content="电流：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label16" Content="23ml" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label17" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label18" Content="电压：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label19" Content="23ml" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label20" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="1">
+                <Label x:Name="label21" Content="车辆信息：" Foreground="#FF01AEFF"  FontWeight="Bold" FontFamily="Microsoft YaHei" FontSize="20" VerticalAlignment="Center"/>
+                <Label x:Name="label22" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label23" Content="空调：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label24" Content="23℃" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label25" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label26" Content="灯光：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label27" Content="23℃" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label28" Content="   " Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label29" Content="音响：" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+                <Label x:Name="label30" Content="23℃" Foreground="#FF01AEFF"  FontFamily="Microsoft YaHei" FontSize="16" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Column="2">
+                <Button Content="急停" HorizontalAlignment="Left" Margin="5,0,5,0" VerticalAlignment="Center" Foreground="#FF0E88FD" FontSize="16" FontWeight="Bold" Click="Button_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1,1,1,1" CornerRadius="8,8,8,8" x:Name="PART_Background" Background="#FF001D5B" Padding="8,1,8,1" BorderBrush="#FF0E88FD">
+                                <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" TargetName="PART_Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                                <GradientStop Color="#001d5c" Offset="0.0" />
+                                                <GradientStop Color="#001d5c" Offset="0.5" />
+                                                <GradientStop Color="#001d5c" Offset="0.0" />
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <DropShadowEffect BlurRadius="10" Color="#001d5c" Direction="0" Opacity="1" RenderingBias="Performance" ShadowDepth="0" Block.TextAlignment="Left" />
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Label Content="|" FontSize="16" Opacity="0.55" VerticalAlignment="Center" >
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF00134B"/>
+                            <GradientStop Color="#FF001852" Offset="1"/>
+                            <GradientStop Color="#FF0E88FD" Offset="0.457"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Image x:Name="imgMin" Source="/Images/min.png" HorizontalAlignment="Left" VerticalAlignment="Center" Stretch="None" Margin="5,0,5,0" MouseDown="imgMin_MouseDown" />
+                <Image x:Name="imgClose" Source="/Images/close.png" HorizontalAlignment="Left" VerticalAlignment="Center" Stretch="None" Margin="5,0,5,0" MouseDown="imgClose_MouseDown" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="GdContent"   Grid.Row="1" >
+        </Grid>
+    </Grid>
+</Window>

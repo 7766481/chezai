@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="WpfApp1.Modules.AnimImage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" RenderTransformOrigin="0.5,0.5"
+           >
+    <UserControl.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform ScaleX="{Binding Path=ScaleX}" ScaleY="{Binding Path=ScaleY}"/>
+            <TranslateTransform X="{Binding Path=X}" Y="{Binding Path=Y}"/>
+        </TransformGroup>
+    </UserControl.RenderTransform>
+    <Grid  >
+        <Image x:Name="imgViewer1" Source="/Images/animImagenormal.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="None"  />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock TextWrapping="Wrap" x:Name="TbkTitle"  Text="干扰炮" FontSize="24" FontWeight="Bold" FontFamily="Microsoft YaHei UI" >
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF13ABFF" Offset="1"/>
+                        <GradientStop Color="#FFC5FAFF"/>
+                        <GradientStop Color="#FF54C8FF" Offset="0.519"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock Foreground="White" TextWrapping="Wrap" x:Name="TbkDescribe1" Text="详情" Height="15" Width="31" Visibility="Hidden" />
+        </StackPanel>
+        <Image  x:Name="imgViewer2"  VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,5,24" MinWidth="4" Stretch="None"   />
+    </Grid>
+</UserControl>
+ 
